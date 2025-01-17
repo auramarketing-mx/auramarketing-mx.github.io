@@ -35,7 +35,7 @@ body {
 
 #userName {
     color: var(--accentColor);
-    font-size: 1rem;
+    font-size: 1.5rem; /* Ajustado para resaltar el nombre */
     font-weight: bold;
     line-height: 1.25;
     display: block;
@@ -43,13 +43,25 @@ body {
     width: 100%;
     text-align: center;
     text-decoration: none;
+    margin-top: 10px;
 }
+
+#bio {
+    text-align: center; /* Centrar el texto */
+    font-family: var(--font); /* Misma fuente que el hashtag */
+    font-size: 1rem; /* Tamaño de fuente reducido */
+    color: var(--accentColor); /* Mismo color que los enlaces */
+    margin-top: 10px; /* Espaciado entre el nombre y el texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
 
 #links {
     max-width: 675px;
     width: auto;
     display: block;
     margin: 27px auto;
+    text-align: center;
 }
 
 .link {
@@ -66,7 +78,6 @@ body {
     margin-bottom: 10px;
     padding: 10px; /* 17px */
     text-decoration: none;
-    /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -92,7 +103,7 @@ body {
     width: 100%;
     text-align: center;
 
-    /*  animation   */
+    /* Animación */
     overflow: hidden;
     background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
     background-repeat: no-repeat;
@@ -102,7 +113,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
-
 
 /*-------------------------animations-----------------------*/
 @keyframes transitionAnimation {
@@ -118,10 +128,10 @@ body {
 
 @keyframes animate {
     0% {
-      background-position: -500%;
+        background-position: -500%;
     }
     100% {
-      background-position: 500%;
+        background-position: 500%;
     }
 }
 
@@ -133,6 +143,7 @@ body {
         transform: translateY(-2000px);
     }
 }
+
 
 
 /*-------------------------popup------------------------*/
